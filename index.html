@@ -26,10 +26,25 @@
             <a class="btn btn-outline-dark" href="https://youtube.com/@ff.anil55"><i class="fab fa-youtube"></i> YouTube</a>
             <a class="btn btn-outline-dark" href="https://discord.gg/byRPnAANw6"><i class="fab fa-discord"></i> Discord</a>
             <a class="btn btn-outline-dark" href="mailto:iletisim.aniluyanik@gmail.com"><i class="fas fa-envelope"></i> Email</a>
-            <a class="btn btn-danger" href="https://youtu.be/vDXz_R3rZfM"><i class="fas fa-video"></i> Craftland Map Tutorial (VIP MAP)</a>
+            <a class="btn btn-dark" href="https://youtu.be/vDXz_R3rZfM"><i class="fas fa-video"></i> Craftland Map Tutorial Video (VIP MAP)</a>
+            <a class="btn btn-outline-dark" onclick="copyText()"><i class="fa fa-copy"></i>COPY MAP CODE</a>
         </div>
         <p>2024 <a href="mailto:iletisim.aniluyanik@gmail.com">ANIL UYANIK</a></p>
     </div>
+
+    <script>
+        function copyText() {
+            var textToCopy = "#FREEFIRED912ADDBF3BEE460C6E66DE6538C2DD65112";
+            var tempInput = document.createElement("input");
+            tempInput.value = textToCopy;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+
+            alert("Copied: " + textToCopy);
+        }
+    </script>
 </body>
 
 </html>
